@@ -34,5 +34,13 @@
         android:text="View 3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
+    <TextView
+        app:layout_constraintLeft_toLeftOf="@id/textview1"
+        app:layout_constraintTop_toBottomOf="@id/textview1"
+        android:id="@+id/textview4"
+        android:textSize="20sp"
+        android:text="View 3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
