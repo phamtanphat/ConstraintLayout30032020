@@ -8,40 +8,25 @@
 
     <TextView
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="@id/guidelineVertical"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
         android:textSize="20sp"
         android:text="View 1"
         android:id="@+id/textview1"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"/>
     <TextView
-        app:layout_constraintRight_toLeftOf="@id/textview1"
-        app:layout_constraintBottom_toTopOf="@id/textview1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/guidelineVertical"
         android:textSize="20sp"
         android:text="View 2"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"/>
-    <TextView
-        app:layout_constraintLeft_toRightOf="@id/textview1"
-        app:layout_constraintBottom_toTopOf="@id/textview1"
-        android:textSize="20sp"
-        android:text="View 3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-    <TextView
-        app:layout_constraintRight_toLeftOf="@id/textview1"
-        app:layout_constraintTop_toBottomOf="@id/textview1"
-        android:textSize="20sp"
-        android:text="View 4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-    <TextView
-        app:layout_constraintLeft_toRightOf="@id/textview1"
-        app:layout_constraintTop_toBottomOf="@id/textview1"
-        android:textSize="20sp"
-        android:text="View 5"
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineVertical"
+        app:layout_constraintGuide_percent="0.5"
+        android:orientation="vertical"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
